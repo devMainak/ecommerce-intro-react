@@ -2,6 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 // generating and displaying product cards
 const ProductListings = ({products}) => {
@@ -22,7 +23,7 @@ const ProductListings = ({products}) => {
   })
   
   return (
-    <div className='row'>
+    <div className='row mb-5'>
       {productCards}
     </div>
   )
@@ -71,6 +72,7 @@ export default function App() {
         <h3 className='display-3 fw-normal pt-4'>Featured Products</h3>
       <ProductListings products={products}/>
       </main>
+      <Footer/>
     </>
   )
 }

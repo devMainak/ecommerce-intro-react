@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
+// Header component
 const Header = () => (
   <header className="bg-dark text-light pt-4">
     <div className="container">
