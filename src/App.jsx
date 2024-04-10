@@ -15,7 +15,7 @@ const ProductListings = ({products}) => {
           <div className='card-body'>
             <h5 className='card-title'>{product.name}</h5>
             <p className='card-text'>{product.description}</p>
-            <Link className='btn btn-primary'>View Product</Link>
+            <Link className='btn btn-primary' to={`/products/${product.id}`}>View Product</Link>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function App() {
       price: "$99.99",
       availableColors: ["Red", "Blue", "Green"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://via.placeholder.com/400x300",
     },
     {
       id: "2",
@@ -51,7 +51,7 @@ export default function App() {
       price: "$129.99",
       availableColors: ["White", "Black"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://via.placeholder.com/400x300",
     },
     {
       id: "3",
@@ -61,7 +61,7 @@ export default function App() {
       price: "$79.99",
       availableColors: ["Yellow"],
       isReturnApplicable: false,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://via.placeholder.com/400x300",
     }
   ];
   

@@ -16,7 +16,7 @@ const ProductList = ({products}) => {
               <h5 className='card-title'>{product.name}</h5>
               <p className='card-text'>{product.description}</p>
               <p className='text-secondary'>Price: {product.price}</p>
-              <span><Link className='btn btn-primary' to="/">View Product</Link></span>
+              <span><Link className='btn btn-primary' to={`/products/${product.id}`}>View Product</Link></span>
                 </div>
             </div>
           </div>
