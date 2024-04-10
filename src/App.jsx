@@ -9,7 +9,7 @@ const ProductListings = ({products}) => {
 
   const productCards = products.map(product => {
     return (
-      <div className='col-sm-4 mt-3'>
+      <div key={product.id} className='col-sm-4 mt-3'>
         <div className='card'>
           <img className='card-img-top img-fluid' src={product.productImageUrl}/>
           <div className='card-body'>
