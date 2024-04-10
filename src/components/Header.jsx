@@ -9,7 +9,7 @@ const Header = () => (
         <ul className='nav'>
           <li className='nav-item'><NavLink className="nav-link" to="/">Home</NavLink></li>
           <li className='nav-item'><NavLink className="nav-link" to="/products">Products</NavLink></li>
-          <li className='nav-item'><NavLink className="nav-link" to="/">About</NavLink></li>
+          <li className='nav-item'><NavLink className="nav-link" to="/about">About</NavLink></li>
         </ul>
       </nav>
     </div>

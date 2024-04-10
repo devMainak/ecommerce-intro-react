@@ -9,7 +9,7 @@ const ProductList = ({products}) => {
     <div>
       {products.map(product => {
         return (
-          <div className='card d-flex flex-row mb-3'>
+          <div key={product.id} className='card d-flex flex-row mb-3'>
             <img className='img-fluid' src={product.productImageUrl} alt={product.name}/>
             <div className='card-body'>
               <div className='float-end'>
