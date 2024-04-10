@@ -1,14 +1,14 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom'
-// import Header from './components/Header'
+import Header from './components/Header'
 
 // generating and displaying product cards
 const ProductListings = ({products}) => {
 
   const productCards = products.map(product => {
     return (
-      <div className='col-6 mt-3'>
+      <div className='col-sm-4 mt-3'>
         <div className='card'>
           <img className='card-img-top img-fluid' src={product.productImageUrl}/>
           <div className='card-body'>
@@ -30,6 +30,7 @@ const ProductListings = ({products}) => {
 
 export default function App() {
 
+  // products data
   const products = [
     {
       id: "1",
@@ -64,9 +65,12 @@ export default function App() {
   ];
   
   return (
-    <main className='container'>
-      <h3 className='display-3 fw-normal'>Featured Products</h3>
+    <>
+      <Header/>
+      <main className='container'>
+        <h3 className='display-3 fw-normal pt-4'>Featured Products</h3>
       <ProductListings products={products}/>
-    </main>
+      </main>
+    </>
   )
 }
